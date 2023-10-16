@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+    font-family: 'Press Start 2P', cursive;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding-top: 50px;
+}
+
+#gameBoard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.card {
+    width: 100px;
+    height: 100px;
+    background-color: #333;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: 2px solid #00ff00; /* A bright green border for a retro feel */
+    box-shadow: 0 0 10px #00ff00; /* Adding a subtle glow */
+}
+
+.card img {
+    width: 100%;  /* Make sure the image covers the full width of the card */
+    height: 100%;  /* Make sure the image covers the full height of the card */
+    object-fit: cover;  /* Resize the image to cover the card while maintaining its aspect ratio */
+    object-position: center;  /* Center the image within the card */
+    display: none; /* Cards are hidden by default */
+}
