@@ -1,7 +1,8 @@
 const gameBoard = document.getElementById('gameBoard');
 const startGameBtn = document.getElementById('startGameBtn');
 
-const cards = ['alien1', 'alien2', 'alien3', 'alien4']; // Different card types
+const cards = ['alien1', 'alien2', 'alien3', 'alien4']; 
+// Different card types
 let shuffledCards = [];
 let flippedCards = [];
 let canFlip = true;
@@ -24,13 +25,15 @@ function preloadImages(array) {
     }
 }
 
-// Preload your alien GIFs
+// Preload my alien GIFs
 preloadImages(["alien1.gif", "alien2.gif", "alien3.gif", "alien4.gif"]);
 
 
 function startGame() {
-    shuffledCards = shuffle([...cards, ...cards]); // Duplicate cards to get pairs
-    gameBoard.innerHTML = ''; // Reset game board
+    shuffledCards = shuffle([...cards, ...cards]); 
+    // Duplicate cards to get pairs
+    gameBoard.innerHTML = ''; 
+    // Reset game board
 
 
     shuffledCards.forEach(card => {
